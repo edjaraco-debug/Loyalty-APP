@@ -1,0 +1,35 @@
+{
+  "name": "cafeteria-wallet-fidelidad",
+  "version": "1.0.0",
+  "description": "Tarjeta de fidelidad para cafeteria en Apple Wallet",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "worker": "node src/scripts/worker.js",
+    "init-db": "node src/scripts/initDb.js",
+    "demo": "node src/scripts/createDemoPass.js",
+    "create-owner": "node src/scripts/createPlatformOwner.js"
+  },
+  "keywords": [
+    "apple-wallet",
+    "pkpass",
+    "loyalty",
+    "fidelidad",
+    "cafeteria"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@walletpass/pass-js": "^6.9.1",
+    "bullmq": "^5.34.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0",
+    "http2": "^3.3.7",
+    "ioredis": "^5.4.1",
+    "nanoid": "^5.0.7",
+    "pg": "^8.13.0"
+  }
+}

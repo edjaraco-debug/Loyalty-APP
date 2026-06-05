@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.pkpass
+data/*.db
+data/*.db-shm
+data/*.db-wal
+certs/*.pem
+certs/*.p12
+certs/*.cer
+certs/*.key
+.DS_Store
+npm-debug.log*
